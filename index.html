@@ -492,6 +492,24 @@
       text-decoration-thickness: 1px;
       text-underline-offset: 3px;
     }
+    /* ================================
+   REMOVE EMPTY SPACE ABOVE HERO
+   ================================ */
+body, main, .hero {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+header {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* Force hero to align flush under navbar */
+.hero {
+    padding-top: 0 !important;
+    align-items: flex-start !important;
+}
   </style>
 </head>
 <body>
