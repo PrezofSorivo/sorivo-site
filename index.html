@@ -8,9 +8,6 @@
   <meta name="description" content="Sorivo is a modern wellness brand for a smoother kind of day. Sorivo – AM is a non-caffeinated morning formula for calm focus, skin radiance, and stress support." />
 
   <style>
-    html {
-    font-size: 500% !important;
-}
     :root {
       --bg: #fdf7ee;
       --bg-soft: #f8efe0;
@@ -512,6 +509,11 @@ header {
 .hero {
     padding-top: 0 !important;
     align-items: flex-start !important;
+}
+    /* FORCE GLOBAL FONT SCALING */
+html, body, main, section, .hero, .story-section, .faq-section {
+    font-size: 200% !important;
+    line-height: 1.25 !important;
 }
   </style>
 </head>
