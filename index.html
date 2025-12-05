@@ -510,77 +510,70 @@ header {
     padding-top: 0 !important;
     align-items: flex-start !important;
 }
-    /* =========================================================
-   FONT SCALING – MAKE EVERYTHING LARGER
+   /* =========================================================
+   GLOBAL TYPOGRAPHY RESET – BIG, UNIFORM TEXT
    ========================================================= */
 
-/* Base body text */
-body {
-  font-size: 18px !important;   /* was ~14–16px */
-  line-height: 1.7 !important;
+/* Base sizes (roughly 2× your previous body text) */
+:root {
+  --sorivo-base: 24px;   /* main font size everywhere */
+  --sorivo-small: 18px;  /* smaller labels, footer, etc. */
 }
 
-/* Hero title */
-.hero h1 {
-  font-size: clamp(48px, 6vw, 64px) !important;  /* bigger hero headline */
+/* Make everything inherit from body by default */
+html, body {
+  font-size: var(--sorivo-base) !important;
+  line-height: 1.6 !important;
 }
 
-/* Hero subtitle / main paragraphs */
-.hero-sub,
+body * {
+  font-size: inherit;
+}
+
+/* Titles / headings / nav / buttons all use the same base size,
+   just bolder – so no huge hero vs tiny paragraph difference */
+h1, h2, h3, h4,
+.section-title,
+.hero h1,
+.card h3,
+.ingredient-name,
+.faq-question button,
+.logo,
+.nav-links a,
+.nav-cta,
+.btn-primary,
+.btn-secondary {
+  font-size: var(--sorivo-base) !important;
+  font-weight: 600;
+}
+
+/* Body copy – explicitly keep at base size too */
 .hero p,
 .story-section p,
+.product-section p,
 .benefits-grid .card p,
 .ingredients-grid .card p,
 .two-col .list,
 .philosophy,
 .about,
 .faq-item p {
-  font-size: 18px !important;   /* up from 14–16px */
+  font-size: var(--sorivo-base) !important;
 }
 
-/* Section titles */
-.section-title {
-  font-size: 28px !important;
-}
-
-/* Eyebrow labels like “Modern wellness · minimal effort” */
+/* Smaller UI text: pills, badges, footer, microcopy */
 .eyebrow,
 .pill,
 .bottle-badge,
 .mini-badge,
 .soft-pill,
-.hero-meta {
-  font-size: 14px !important;
-}
-
-/* FAQ questions (accordion buttons) */
-.faq-question button {
-  font-size: 18px !important;
-}
-
-/* Nav / logo / buttons */
-.logo {
-  font-size: 18px !important;
-}
-
-.nav-links a {
-  font-size: 16px !important;
-}
-
-.nav-cta,
-.btn-primary,
-.btn-secondary {
-  font-size: 16px !important;
-}
-
-/* Footer text */
+.hero-meta,
 footer,
 .footer-inner,
 .footer-inner div,
 .footer-inner p {
-  font-size: 14px !important;
+  font-size: var(--sorivo-small) !important;
 }
-
+ 
   </style>
 </head>
 <body>
