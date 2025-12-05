@@ -510,11 +510,77 @@ header {
     padding-top: 0 !important;
     align-items: flex-start !important;
 }
-    /* FORCE GLOBAL FONT SCALING */
-html, body, main, section, .hero, .story-section, .faq-section {
-    font-size: 200% !important;
-    line-height: 1.25 !important;
+    /* =========================================================
+   FONT SCALING – MAKE EVERYTHING LARGER
+   ========================================================= */
+
+/* Base body text */
+body {
+  font-size: 18px !important;   /* was ~14–16px */
+  line-height: 1.7 !important;
 }
+
+/* Hero title */
+.hero h1 {
+  font-size: clamp(48px, 6vw, 64px) !important;  /* bigger hero headline */
+}
+
+/* Hero subtitle / main paragraphs */
+.hero-sub,
+.hero p,
+.story-section p,
+.benefits-grid .card p,
+.ingredients-grid .card p,
+.two-col .list,
+.philosophy,
+.about,
+.faq-item p {
+  font-size: 18px !important;   /* up from 14–16px */
+}
+
+/* Section titles */
+.section-title {
+  font-size: 28px !important;
+}
+
+/* Eyebrow labels like “Modern wellness · minimal effort” */
+.eyebrow,
+.pill,
+.bottle-badge,
+.mini-badge,
+.soft-pill,
+.hero-meta {
+  font-size: 14px !important;
+}
+
+/* FAQ questions (accordion buttons) */
+.faq-question button {
+  font-size: 18px !important;
+}
+
+/* Nav / logo / buttons */
+.logo {
+  font-size: 18px !important;
+}
+
+.nav-links a {
+  font-size: 16px !important;
+}
+
+.nav-cta,
+.btn-primary,
+.btn-secondary {
+  font-size: 16px !important;
+}
+
+/* Footer text */
+footer,
+.footer-inner,
+.footer-inner div,
+.footer-inner p {
+  font-size: 14px !important;
+}
+
   </style>
 </head>
 <body>
