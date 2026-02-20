@@ -579,7 +579,55 @@ footer,
 .footer-inner p {
   font-size: var(--sorivo-small) !important;
 }
- 
+ /* =========================================
+   HERO DIVIDER + WAITLIST
+   ========================================= */
+
+.hero-divider{
+  height: 1px;
+  width: 100%;
+  margin: 22px 0 18px;
+  background: linear-gradient(
+    90deg,
+    rgba(0,0,0,0),
+    rgba(226,202,118,0.75),
+    rgba(0,0,0,0)
+  );
+}
+
+.waitlist{
+  max-width: 540px;
+  padding: 16px;
+  border-radius: 18px;
+  background: radial-gradient(circle at top left, rgba(255,255,255,0.85), rgba(243,225,165,0.35));
+  border: 1px solid rgba(202,165,82,0.35);
+  box-shadow: 0 14px 34px rgba(202,165,82,0.18);
+}
+
+.waitlist-form{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.waitlist-form input[type="email"]{
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.14);
+  background: rgba(255,255,255,0.92);
+}
+
+.waitlist-form input[type="email"]:focus{
+  border-color: rgba(202,165,82,0.55);
+  box-shadow: 0 0 0 4px rgba(226,202,118,0.22);
+}
+
+.waitlist-note{
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--muted);
+}
   </style>
 </head>
 <body>
