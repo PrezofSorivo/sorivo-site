@@ -628,6 +628,31 @@ footer,
   font-size: 13px;
   color: var(--muted);
 }
+ /* =========================
+   HERO DIVIDER + WAITLIST
+   ========================= */
+
+.hero-divider{
+  height: 1px;
+  width: 100%;
+  margin: 18px 0 14px;
+  background: linear-gradient(
+    90deg,
+    rgba(0,0,0,0),
+    rgba(202,165,82,0.55),
+    rgba(0,0,0,0)
+  );
+}
+
+.waitlist{
+  max-width: 540px;
+  padding: 16px 16px 14px;
+  border-radius: 18px;
+  background: radial-gradient(circle at top left, rgba(255,255,255,0.86), rgba(243,225,165,0.32));
+  border: 1px solid rgba(202,165,82,0.32);
+  box-shadow: 0 14px 34px rgba(202,165,82,0.16);
+  align-self: start; /* keeps right side from dropping */
+}
   </style>
 </head>
 <body>
